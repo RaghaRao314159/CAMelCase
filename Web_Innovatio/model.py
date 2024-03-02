@@ -1,8 +1,9 @@
 from elevenlabs import generate, play, set_api_key, clone
 
 
-def check(abs_path):
-    print("22d834863846834683hkdwkdhwhkehr378")
+def allowed_file(filename):
+    # Check if the file has an allowed extension (e.g., MP3)
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in {'mp3'}
 
 
 def gen_voice(abs_path, text):
@@ -18,5 +19,8 @@ def gen_voice(abs_path, text):
 
     audio = generate(text=text, voice=voice)
 
+    '''
     with open('Gen_voice.mp3', 'wb') as f:
         f.write(audio)
+    '''
+    return audio

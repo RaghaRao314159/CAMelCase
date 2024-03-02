@@ -1,8 +1,49 @@
 from flask import Flask, render_template, request, redirect, url_for, send_file
-from model import gen_voice, check
+from model import gen_voice, allowed_file
 import os
 
 app = Flask(__name__)
+
+
+@app.route('/', methods=['POST'])
+def upload_file():
+    if 'file' not in request.files:
+        print('No file part')
+        return 'No file part'
+
+    file = request.files['file']
+
+    if file.filename == '': 
+        print('No selected file')
+        return 'No selected file'
+
+    print(allowed_file(file.filename))
+    if file and allowed_file(file.filename):
+        # Save the file to a desired location
+
+        file_path = os.path.join('/Users/ragharao/Desktop/CAMelCase/Web_Innovatio', file.filename)
+        print(file_path)
+
+        file.save(file_path)
+        # Return the uploaded file as a response
+        return send_file(file_path, as_attachment=True)
+        #return send_file(file, as_attachment=True)
+    print('Invalid file format')
+    return 'Invalid file format'
+
+
+def allowed_file(filename):
+    # Check if the file has an allowed extension (e.g., MP3)
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in {'mp3'}
+
+
+
+
+
+
+
+
+'''
 
 @app.route('/',methods=['POST','GET'])
 def contactpage():
@@ -91,6 +132,7 @@ def friend():
 
     return render_template('friend.html', me_convo = me_convo, friend_convo = friend_convo)
 
+'''
 
 @app.route('/audio')
 def serve_audio():
@@ -100,6 +142,7 @@ def serve_audio():
 def favicon():
     return send_file("templates/favicon.ico", as_attachment=True)
 
+    
 if __name__ == "__main__":
     path = ""
     friend = ""

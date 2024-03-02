@@ -1,10 +1,23 @@
-from flask import Flask, render_template, request, redirect, url_for, send_file
+from flask import Flask, render_template, request, redirect, url_for, send_file, jsonify
 from model import gen_voice, check
 import os
 
 app = Flask(__name__)
 
-@app.route('/',methods=['POST','GET'])
+@app.route('/android/post', methods=['POST'])
+
+def handle_android_post():
+    # Get the JSON data from the request
+    data = request.json
+    
+    # Process the data
+    # For example, you can print it
+    print("Received data from Android app:", data)
+    
+    # Return a response to the Android app
+    response = {'message': 'Data received successfully'}
+    return jsonify(response), 200
+
 def contactpage():
     if  request.method == 'POST':
         if request.form.get('name'):

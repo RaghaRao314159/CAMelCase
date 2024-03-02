@@ -6,7 +6,7 @@ def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in {'mp3'}
 
 
-def gen_voice(abs_path, text):
+def gen_voice(abs_path, text, save_path):
     set_api_key("1c1780f87b362547e1dab31485e76afb")
 
     kash_sound_url = abs_path.replace('\\', '/')
@@ -19,8 +19,6 @@ def gen_voice(abs_path, text):
 
     audio = generate(text=text, voice=voice)
 
-    '''
-    with open('Gen_voice.mp3', 'wb') as f:
+    
+    with open(save_path, 'wb') as f:
         f.write(audio)
-    '''
-    return audio

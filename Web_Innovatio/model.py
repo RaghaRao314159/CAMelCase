@@ -13,7 +13,7 @@ def gen_voice(abs_path, text, save_path):
 
     voice = clone(
         name="Alex",
-        description="An indian student who lives in Singapore", # Optional
+        description="White male", # Optional
         files=[kash_sound_url]
     )
 

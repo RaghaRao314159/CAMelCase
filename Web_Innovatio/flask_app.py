@@ -4,33 +4,24 @@ import os
 
 app = Flask(__name__)
 
-def handle_android_post():
-    # Get the JSON data from the request
-    data = request.get_json(silent=False)
-
-    print(data)
-    
-    # Process the data
-    # For example, you can print it
-    print("Received data from Android app:", data)
-    
-    # Return a response to the Android app
-    #response = {'message': 'Data received successfully'}
-    #return jsonify(response), 20)
-    return data["notification"]
-
-
 @app.route('/', methods=['POST'])
 def upload_file():
+    if 'text' not in request.form:
+        print('No text part')
+        return 'error, No text part'
+
+    text = request.form['text']
+
+    if text == '': 
+        print('Empty notification')
+        return 'error, Empty notification'
+
     if 'file' not in request.files:
         print('No file part')
         return 'No file part'
 
     file = request.files['file']
-    text = request.form['text']
-
-        
-
+    
     if file.filename == '': 
         print('No selected file')
         return 'No selected file'
@@ -42,7 +33,7 @@ def upload_file():
         #Call AI
         #audio = gen_voice(path, "latest_message")
 
-        file_path = os.path.join('/Users/juanfranciscolorussonotarofrancesco/Desktop/CAMelCase/Web_Innovatio/', file.filename)
+        file_path = os.path.join('/Users/ragharao/Desktop/CAMelCase/Web_Innovatio/', file.filename)
         print(file_path)
         file.save(file_path)
 

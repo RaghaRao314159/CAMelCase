@@ -18,5 +18,5 @@ def gen_voice(abs_path, text):
 
     audio = generate(text=text, voice=voice)
 
-    with open('Web_Innovatio/Gen_voice.mp3', 'wb') as f:
+    with open('Gen_voice.mp3', 'wb') as f:
         f.write(audio)

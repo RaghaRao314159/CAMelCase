@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>InnovAItio</title>
+  <link rel="icon" type="image/x-icon" href="{{ url_for('favicon') }}">
+</head>
+<style>
+.contact_form input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+
+  .contact_form [type=text]:focus {
+  border: 3px solid #092a63;
+  }
+  
+  .contact_form input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .contact_form input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .contact_form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+
+  .clear_contacts_button {
+    position: relative;
+    background-color: #f14949;
+    border: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .clear_contacts_button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .clear_contacts_button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+.chat_with {
+    border-radius: 5px;
+    background-color: #e5e2e2;
+    padding: 20px;
+  }
+.chat_with input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.chat_with input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+.chat_with input[type=submit] {
+    width: 100%;
+    background-color: #4cafa0;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .chat_with input[type=submit]:hover {
+    background-color: #45a077;
+  }
+
+.clear_audio input[type=submit] {
+    width: 20%;
+    background-color: #f86f14;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .clear_audio input[type=submit]:hover {
+    background-color: #d21a1a;
+  }
+
+  .warning {
+    background-color: #ff9800;
+    padding: 10px;
+    margin: 10px, 10px
+  }
+</style>
+</style>
+<body>
+
+
+<h1>Contacts</h1>
+
+<Box class = "warning"> <b>Replace</b> all backslash "\" with forward slash "/" </Box> <br><br>
+
+<form class = "contact_form" action="/" enctype="multipart/form-data" method="POST">
+    <label for="name">Name: </label><br>
+    <input type="text" name="name" autocomplete="off"> <br><br>
+
+    <label for="number">Number: </label><br>
+    <input type="text" name="number" autocomplete="off"> <br><br>
+
+    <label for="description">Description: </label><br>
+    <input type="text" name="description" autocomplete="off"> <br><br>
+
+    <label for="mp3_path">Upload your voice recording (mp3 file): </label><br>
+    <input type="file" name="audio_file" accept="audio/*"> <br><br>
+
+    <input type="submit" value="Add To Contacts">
+</form>
+
+<script>
+    // STORE TOKEN INTO LOCALSTORAGE
+    localStorage.setItem("{{name}}", "{{contact}}");
+</script>
+
+<br><br>
+
+<!--button class = "clear_contacts_button" type="button" onclick="localStorage.clear()">clear contacts</button > <br><br>-->
+<!--class refers to CSS name-->
+<form class = "clear_audio" onclick="localStorage.clear()" action="/" enctype="multipart/form-data" method="POST">
+  <input type="submit" name="clear_audio" value="Clear Contacts" >
+</form> <br><br>
+
+<form class = "chat_with" action="/" enctype="multipart/form-data" method="POST">
+    <label for="friend_box">Chat with: </label>
+    <input type="text" name="friend_box" autocomplete="off"> 
+    <input type="submit" value="Go to Chat">
+</form>
+
+
+</body>
+</html>

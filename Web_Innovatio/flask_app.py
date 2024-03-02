@@ -48,7 +48,4 @@ def upload_file():
 
     
 if __name__ == "__main__":
-    path = ""
-    friend = ""
-    me_convo, friend_convo = [], []
     app.run(debug=True)

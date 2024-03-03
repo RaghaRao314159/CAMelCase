@@ -91,7 +91,7 @@ http://Juan289Flerovium.pythonanywhere.com/
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](http://dada03.pythonanywhere.com/)
+[![Product Name Screen Shot][product-screenshot]](http://Juan289Flerovium.pythonanywhere.com/)
 
 ### Current problems with chat apps:
 * Sending voice messages may not always be convenient. Text messages remain the main form of online communication today.
@@ -101,7 +101,7 @@ http://Juan289Flerovium.pythonanywhere.com/
      
 This chat app solves these problems by adding the human element to text messages. The text messages sent by your mother (for e.g.) can be heard in your mother's voice.
 
-### Why InnovAItio?:
+### Why Persona?:
 * The visually impared will finally feel empowerd and included in individual and group chats.
 * Prevents miscommunication.
 * Provide a much more personalised experience to mundane text messaging.

@@ -244,7 +244,7 @@ Ragha Rao - ragharao2001@gmail.com
 [stars-url]: https://github.com/RaghaRao314159/InnovAItio/stargazers
 [issues-shield]: https://img.shields.io/github/issues/RaghaRao314159/InnovAItio.svg?style=for-the-badge
 [issues-url]: https://github.com/RaghaRao314159/InnovAItio/issues
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/screenshot.jpg
 [Elevenlabs]: https://img.shields.io/badge/11ElevenLabs-ff0000
 [Elevenlabs-url]: https://elevenlabs.io/speech-synthesis
 [Flask]: https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white

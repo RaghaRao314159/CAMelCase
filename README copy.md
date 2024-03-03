@@ -94,9 +94,10 @@ http://Juan289Flerovium.pythonanywhere.com/
 [![Product Name Screen Shot][product-screenshot]](http://dada03.pythonanywhere.com/)
 
 ### Current problems with chat apps:
-* Sending voice messages may not always be convinient. Text messages remain the main form of online communication today.
-* Texts lack the ability to effectively capture the depth and neuances of communication.
+* Sending voice messages may not always be convenient. Text messages remain the main form of online communication today.
+* Texts lack the ability to effectively capture the depth and nuances of communication.
 * Visually impaired individuals are unable to read text messages. Text readers read these messages in a monotone manner, not delivering an accurate representation of the message.
+* My mother recently reached the age where she requires reading glasses every time she opens WhatsApp. She will be the first to benefit from this app
      
 This chat app solves these problems by adding the human element to text messages. The text messages sent by your mother (for e.g.) can be heard in your mother's voice.
 
@@ -106,10 +107,10 @@ This chat app solves these problems by adding the human element to text messages
 * Provide a much more personalised experience to mundane text messaging.
 
 ### How to use?:
-1. Get a 1 to 5 min recording of your friend, (e.g. Sam)
-2. Save Sam in your contacts - name, number, description and voice 
-3. Go to chat and hear Sam's text in Sam's voice. \\
-_Help: Go to https://ragharao.pythonanywhere.com/friend to simulate a conversation as a friend with yourself._
+1. Get a 30s recording of your friend, (e.g. Sam)
+2. Save Sam in your phone contacts - name, number, description
+3. Save Sam's voice in Persona app 
+4. Go to chat and hear Sam's text in Sam's voice.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,10 +120,6 @@ _Help: Go to https://ragharao.pythonanywhere.com/friend to simulate a conversati
 * [![Elevenlabs][Elevenlabs]][Elevenlabs-url]
 * [![Flask][Flask]][Flask-url]
 * [![Python][Python]][Python-url]
-* [![Javascript][Javascript]][Javascript-url]
-* [![html][html]][html-url]
-* [![jinja][jinja]][jinja-url]
-* [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

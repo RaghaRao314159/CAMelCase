@@ -1,8 +1,7 @@
-# CAMelCase
+# Persona by CAMelCase
 
 
-https://ragharao.pythonanywhere.com/ \
-alternative: http://dada03.pythonanywhere.com/
+http://Juan289Flerovium.pythonanywhere.com/
 
 
 
@@ -35,11 +34,11 @@ alternative: http://dada03.pythonanywhere.com/
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/RaghaRao314159/InnovAItio">
+  <a href="https://github.com/RaghaRao314159/CAMelCase">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">InnovAItio</h3>
+  <h3 align="center">Persona</h3>
 
   <p align="center">
     An awesome personalised chat app!

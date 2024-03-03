@@ -43,7 +43,7 @@ http://Juan289Flerovium.pythonanywhere.com/
   <p align="center">
     An awesome personalised chat app!
     <br />
-    <a href="https://lablab.ai/event/eleven-labs-ai-hackathon/innovaitio/innovaitio-the-personalised-chat-apphttps://devpost.com/software/persona-39m1u6"><strong>Hackathon Submission »</strong></a>
+    <a href="https://devpost.com/software/persona-39m1u6"><strong>Hackathon Submission »</strong></a>
     <br />
     <br />
     <a href="https://github.com/RaghaRao314159/InnovAItio/blob/67b093642f285768981b217163e14a1c2477aebe/InnovAItio.pdf">Read More

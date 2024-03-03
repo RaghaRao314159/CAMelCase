@@ -35,7 +35,7 @@ http://Juan289Flerovium.pythonanywhere.com/
 <br />
 <div align="center">
   <a href="https://github.com/RaghaRao314159/CAMelCase">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.jpeg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Persona</h3>

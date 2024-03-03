@@ -146,9 +146,9 @@ Install these libraries
 1. Get a free Elevenlabs API Key at https://elevenlabs.io/subscription
 2. Clone the repo
    ```sh
-   git clone https://github.com/RaghaRao314159/InnovAItio.git
+   git clone https://github.com/RaghaRao314159/CAMelCase.git
    ```
-4. Enter your API in `Web_Innovatio/model.py`
+4. Enter your API in `Persona/model.py`
    ```py
    set_api_key('ENTER YOUR API KEY');
    ```
